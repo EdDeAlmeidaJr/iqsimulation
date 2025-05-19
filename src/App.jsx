@@ -1,18 +1,17 @@
-import TopMenu from './components/TopMenu';
-import SideMenu from './components/SideMenu';
-import GraphArea from './components/GraphArea';
+import TopMenu from "./components/TopMenu";
+import SideMenu from "./components/SideMenu";
+import GraphArea from "./components/GraphArea";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="app-root">
       <TopMenu />
-      <div className="columns" style={{minHeight: '90vh'}}>
-        <div className="column is-2">
-          <SideMenu />
-        </div>
-        <div className="column is-10">
+      <div className="app-body">
+        <SideMenu />
+        <main className="app-main">
           <GraphArea />
-        </div>
+        </main>
       </div>
     </div>
   );

@@ -1,16 +1,19 @@
 function SideMenu() {
   return (
-    <aside className="menu">
-      <p className="menu-label">
-        Navegação
-      </p>
+    <aside className="menu dashboard-sidemenu">
+      <p className="menu-label">Navegação</p>
       <ul className="menu-list">
-        <li><a className="is-active">Dashboard</a></li>
-        <li><a>Configurações</a></li>
-        <li><a>Sobre</a></li>
+        <li>
+          <a className="is-active">Dashboard</a>
+        </li>
+        <li>
+          <a>Configurações</a>
+        </li>
+        <li>
+          <a>Sobre</a>
+        </li>
       </ul>
     </aside>
   );
 }
-
 export default SideMenu;
